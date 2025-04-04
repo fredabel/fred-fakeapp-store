@@ -2,12 +2,12 @@
 This project reinforces state management, API interactions, React Router for navigation, and component-based architecture.
 
 ## Objectives
-✅ Organize and structure a React application with reusable components.
-✅ Manage state using useState.
-✅ Fetch, create, update, and delete products using Axios or Fetch API.
-✅ Implement React Router for multi-page navigation.
-✅ Apply React Bootstrap for UI styling and responsiveness.
-✅ Handle loading states, errors, and API responses effectively.
+*✅ Organize and structure a React application with reusable components.
+*✅ Manage state using useState.
+*✅ Fetch, create, update, and delete products using Axios or Fetch API.
+*✅ Implement React Router for multi-page navigation.
+*✅ Apply React Bootstrap for UI styling and responsiveness.
+*✅ Handle loading states, errors, and API responses effectively.
 
 ## API Integration
 
