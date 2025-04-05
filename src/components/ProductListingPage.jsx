@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Container, Carousel, Row, Col, Card, Button, Placeholder, Spinner   } from 'react-bootstrap';
+import * as Icon from 'react-bootstrap-icons';
+import { Container, Carousel, Row, Col, Card, Button, Placeholder, Spinner } from 'react-bootstrap';
 import ErrorMessage from './ErrorMessage';
 function ProductListing(){
 
@@ -50,9 +51,14 @@ function ProductListing(){
                                 <div className="px-3 py-2 bg-body-tertiary shadow rounded-4 mb-3">
                                     {
                                         !loading ? 
-                                            <div className="d-flex">
-                                                <small className="fw-bold">$</small>
-                                                <div className="fw-bold">{convertPrice(product.price)}</div>
+                                            <div className="d-flex flex-row justify-content-between align-items-center">
+                                                <div className="fw-bold"><small className="">$</small>{convertPrice(product.price)}</div>
+                                                <div className="d-flex align-items-center gap-1">  
+                                                    <Icon.StarFill className="text-warning" />
+                                                    <small className="text-secondary fw-bold">{product.rating.rate}</small>
+                                
+                                                </div>
+                                              
                                             </div>
                                         :
                                         <Placeholder animation="glow">
