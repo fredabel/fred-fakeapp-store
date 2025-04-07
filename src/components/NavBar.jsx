@@ -4,8 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import AddProduct from './AddProduct';
-import Cart from './Cart';
+import CartIcon from './CartIcon';
 
 function NavBar(){
 
@@ -19,8 +18,7 @@ function NavBar(){
                     <Nav.Link as={NavLink} to="/products" activeclassname="active" className="">Products</Nav.Link>
                 </Nav>
                 <Nav>
-                    <AddProduct />
-                    {/* <Cart /> */}
+                <Nav.Link as={NavLink} to="/cart" activeclassname="active"><CartIcon /></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
       </Navbar>

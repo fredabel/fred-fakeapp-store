@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as Icon from 'react-bootstrap-icons';
 import { Container, Carousel, Row, Col, Card, Button, Placeholder, Spinner } from 'react-bootstrap';
 import ErrorMessage from './ErrorMessage';
+import AddProduct from './AddProduct';
 function ProductListing(){
 
     const [products, setProducts] = useState([]) //State store Products
@@ -35,6 +36,7 @@ function ProductListing(){
 
     return(
         <Container fluid >
+            <div className="d-flex justify-content-end"><AddProduct /></div>
             <div className="d-flex flex-row flex-wrap justify-content-center py-5">
                 {
                     products.map((product,index) => (
